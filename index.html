@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-board">
+        <div>
+          <h3>HOME</h3>
+          <div id="scoreBoxHome" class="score-box-home">0</div>
+          <div class="button-container">
+            <button id="addOneHome" onclick="homeAddOne()">+1</button>
+            <button id="addTwoHome" onclick="homeAddTwo()">+2</button>
+            <button id="addTreeHome" onclick="homeAddTree()">+3</button>
+          </div>
+          <div class="reset-home">
+            <button id="resetHomeScore" onclick="resetHome()">Reset</button>
+          </div>
+        </div>
+        <div>
+          <h3>GUEST</h3>
+          <div id="scoreBoxGuest" class="score-box-guest">0</div>
+          <div class="button-container">
+            <button id="addOneGuest" onclick="GuestAddOne()">+1</button>
+            <button id="addTwoGuest" onclick="GuestAddTwo()">+2</button>
+            <button id="addTreeGuest" onclick="GuestAddTree()">+3</button>
+          </div>
+          <div class="reset-guest">
+            <button id="resetGuestScore" onclick="resetGuest()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
